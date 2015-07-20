@@ -1,5 +1,4 @@
-# deepdreamtutorial
-## Deep Dream Tutorial
+# Deep Dream Tutorial
 
 This is a walkthrough of the Deep Dream code created by Google. In it you'll learn how to create Deep Dreams, 
 Controlled Deep Dreams, and Controlled Video Deem Dreams. There will be a [blog post](http://www.kpkaiser.com)
