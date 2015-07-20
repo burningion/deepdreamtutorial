@@ -12,4 +12,15 @@ To get it running:
 $ ipython notebook
 ```
 
+## Run the Video Example
+
+```bash
+$ cd video
+$ ffmpeg -i les_coleman.m4v output%05d.jpg
+$ python runnitoptical.py
+$ cd output
+$ ffmpeg -i output%05d.jpg out.mp4
+```
+
+
 Enjoy.
