@@ -102,7 +102,7 @@ def deepdream(net, base_img, iter_n=10, octave_n=4, octave_scale=1.4,
     return deprocess(net, src.data[0])
 
 
-guide = np.float32(PIL.Image.open('../older.jpg')) # flowers.jpg is 320x240
+guide = np.float32(PIL.Image.open('../swamp.jpg')) # flowers.jpg is 320x240
 end = 'inception_4b/5x5'
 h, w = guide.shape[:2]
 src, dst = net.blobs['data'], net.blobs[end]
@@ -153,5 +153,5 @@ for filename in glob.glob('*.jpg'):
     num_files += 1
 
 elapsed = timeit.default_timer() - start_time
-print "Ran through " + str(num_files) + " in " + str(elapsed) + "seconds. " + str(elapsed / images) + " seconds per image average."
+print "Ran through " + str(num_files) + " in " + str(elapsed) + "seconds. " + str(elapsed / num_files) + " seconds per image average."
      
