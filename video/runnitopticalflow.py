@@ -123,7 +123,7 @@ def objective_guide(dst):
 import timeit
 start_time = timeit.default_timer()
 
-img = np.float32(PIL.Image.open('/Users/kirkkaiser/deepdream/yorktest/output00001.jpg'))
+img = np.float32(PIL.Image.open('output00001.jpg'))
 h, w, c = img.shape
 hallu = deepdream(net, img, end=end, objective=objective_guide)
 np.clip(hallu, 0, 255, out=hallu)
